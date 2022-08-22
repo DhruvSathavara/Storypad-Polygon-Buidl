@@ -28,16 +28,21 @@ NFT Readership is a kind of membership where only specific number of readers wil
 ![Screenshot 2022-08-17 at 8 56 17 PM](https://user-images.githubusercontent.com/69969675/185179514-0f260cbc-b274-4fb7-940b-7881b8252a82.png)
 
 
+## NFT Readership Detail
+
+![MicrosoftTeams-image (24)](https://user-images.githubusercontent.com/96543964/185998934-e5332947-2b8a-4c47-b2c1-67e884f46789.png)
 
 
-## Screen shots
-
+## Categories
 
 ![MicrosoftTeams-image (11)](https://user-images.githubusercontent.com/69969675/185179850-57552f27-1552-408b-95a0-2eef897e0f8a.png)
 
 
+ ## New Arrivals
+ 
 ![MicrosoftTeams-image (15)](https://user-images.githubusercontent.com/69969675/185179875-79a458db-47bd-45a7-8fe8-a099d182992b.png)
 
+## Profile
 
 ![Screenshot 2022-08-17 at 8 58 45 PM](https://user-images.githubusercontent.com/69969675/185180091-d0ef58eb-acb9-4e0c-b03e-8af970057ff4.png)
 
@@ -45,7 +50,8 @@ NFT Readership is a kind of membership where only specific number of readers wil
 
 ## IPFS & Filecoin
 
-https://github.com/Disha1998/Story_Pad/blob/master/Filecoin.md
+https://github.com/DhruvSathavara/Storypad-Polygon-Buidl/blob/master/Filecoin.md
+
 
 ```
   
@@ -85,8 +91,8 @@ https://github.com/Disha1998/Story_Pad/blob/master/Filecoin.md
 ## Polygon
 
 
-https://github.com/Disha1998/Story_Pad/blob/master/Polygon.md
-
+ https://github.com/DhruvSathavara/Storypad-Polygon-Buidl/blob/master/Polygon.md
+ 
 ```
 function createToken(string memory name, string memory symbol) public {
         address _address = address(new mintContract(name, symbol)); // Created Token contract.
