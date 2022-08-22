@@ -37,6 +37,10 @@ NFT Readership is a kind of membership where only specific number of readers wil
 
 ![MicrosoftTeams-image (11)](https://user-images.githubusercontent.com/69969675/185179850-57552f27-1552-408b-95a0-2eef897e0f8a.png)
 
+## Buy story
+
+![Screenshot 2022-08-23 at 12 03 57 AM](https://user-images.githubusercontent.com/96543964/185999552-9e0e03b6-1008-4976-b2ad-138be7ae3f88.png)
+
 
  ## New Arrivals
  
@@ -112,5 +116,11 @@ function createToken(string memory name, string memory symbol) public {
     }
 
 ```
+
+## Smart contracts deployment links (polygonscan)
+
+https://mumbai.polygonscan.com/tx/0x0caedba20dd7de066a5ec484d34d21296938161abea1d28fb10e598496bba2ed
+
+https://mumbai.polygonscan.com/block/27733901
 
 WAGMI 🚀 
