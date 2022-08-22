@@ -26,7 +26,6 @@
     "https-browserify": "^1.0.0",
     "ipfs-car": "^0.7.0",
     "ipfs-http-client": "^50.0.0",
-    "ipfs-unixfs-exporter": "^8.0.4",
     "jspdf": "^2.5.1",
     "moment": "^2.29.4",
     "moralis": "^1.9.0",
