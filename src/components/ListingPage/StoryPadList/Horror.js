@@ -31,7 +31,7 @@ function Horror() {
         if (element.CID) {
           await axios.get(`https://${element.CID}.ipfs.dweb.link/story.json`).then((response) => {
             const id = element.objectId;
-            var newData = { ...response.data, id };
+            var newData = { ...response.data, id ,element};
             array.push(newData);
           });
         }
@@ -61,21 +61,32 @@ function Horror() {
                         <div className="card-body">
                           <h5 className="story-card-title">{e.name}</h5>
                           <p className="card-text">
-                            {e.description.blocks.text}
+                            {e.description}
                           </p>
-                          {console.log(e.description.blocks[0].text)}
+                          {/* {console.log(e.description.blocks[0].text)} */}
 
 
                           <p class="card-text"><small className="text-muted">Last updated {new Date().toLocaleString()}</small></p>
+ {/* <button type="button" class="btn btn-outline-danger buy-story-btn">Buy Story</button> */}
+ {e.element.nftholder_access && e.element.general_access == 1 ? ('') :
 
-                          {/* <button type="button" class="btn btn-outline-danger buy-story-btn">Buy Story</button> */}
-                          <ModalContribute walletAddress={e.walletAddress}
-                            chargeble={e.chargeble}
-                            discount={e.discount} ></ModalContribute>
+<ModalContribute walletAddress={e.walletAddress}
+  e={e}
+// chargeble={e.chargeble}
+// discount={e.discount}
+></ModalContribute>
 
-                          <Link to={`/fantasy-detail/${e.id}`}>
-                            <Button variant="outline-info btn-outline-danger buy-story-btn">Read Full Story</Button>
-                          </Link>
+}
+
+{
+(e.element.nftholder_access && e.element.general_access == 2) ?
+  <Button disabled={true} variant="outline-info btn-outline-danger buy-story-btn">Read Full Story</Button>
+  :
+  <Link
+    to={`/horror-detail/${e.id}`}>
+    <Button variant="outline-info btn-outline-danger buy-story-btn" disabled={false} >Read Full Story</Button>
+  </Link>
+}
                         </div>
                       </a>
                     </div>
